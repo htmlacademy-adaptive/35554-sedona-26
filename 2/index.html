@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
   <base href="https://htmlacademy-adaptive.github.io/35554-sedona-26/2/">
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="#">
-    <img class="main-header__logo-image" src="/source/img/logo.svg" alt="Город Седона" width="185" height="96">
+    <img class="main-header__logo-image" src="img/logo.svg" alt="Город Седона" width="185" height="96">
   </a>
   <nav class="main-navigation">
     <button class="main-navigation__toggle" type="button">
@@ -37,23 +38,23 @@
   <h1 class="visually-hidden">Город Седона</h1>
 
   <section class="intro">
-    <div class="intro-wrapper">
+    <div class="intro__wrapper">
       <h2 class="visually-hidden">Знакомство с городом Седона</h2>
-      <img class="intro__logo" src="/source/img/intro-logo.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+      <img class="intro__logo" src="img/intro-logo.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
       <p class="intro__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="intro__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
   </section>
 
   <section class="advantages">
-    <div class="advantages-wrapper">
+    <div class="advantages__wrapper">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--accent">
           <h3 class="advantages__title">Настоящий городок</h3>
           <span class="advantages__number">— №1 —</span>
           <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="advantages__image" src="/source/img/street-sedona.jpg" width="800" height="400" alt="Город Седона">
+          <img class="advantages__image" src="./img/photo-city-mobile.jpg" width="320" height="260" alt="Город Седона">
         </li>
         <li class="advantages__item advantages__item--house">
           <h3 class="advantages__title">Жилье</h3>
@@ -71,7 +72,7 @@
           <h3 class="advantages__title">Там есть Мост дьявола</h3>
           <span class="advantages__number">— №2 —</span>
           <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="advantages__image" src="/source/img/devil-bridge.jpg" width="800" height="400" alt="Мост дьявола">
+          <img class="advantages__image" src="./img/photo-bridge-mobile.jpg" width="320" height="260" alt="Мост дьявола">
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Небольшая площадь</h3>
@@ -95,29 +96,27 @@
   <section class="search">
     <div class="search__wrapper">
       <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        седоне</p>
-      <button class="search__button button" type="submit">Найти гостиницу</button>
+      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="search__button button" href="#">Найти гостиницу</a>
     </div>
   </section>
 
   <section class="location">
     <div class="location__wrapper">
       <h2 class="visually-hidden">Местоположение Седоны</h2>
-      <iframe class="location__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711102.2562818521!2d-111.75074679442676!3d34.81236743292051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1659068815140!5m2!1sru!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <img class="location__image" src="./img/map-mobile.jpg" width="320" height="350" alt="Местоположение Седоны на карте">
+      <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711102.2562818521!2d-111.75074679442676!3d34.81236743292051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1659068815140!5m2!1sru!2sru"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 </main>
 
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer__hashtag hashtag">
-      <a class="hashtag__link" href="#">#visitsedona</a>
-    </div>
-    <div class="main-footer__social social">
+    <a class="main-footer__hashtag-link" href="#">#visitsedona</a>
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -135,15 +134,14 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
+    </section>
+    <p class="main-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
       </a>
-    </div>
+    </p>
   </div>
 </footer>
-
 </body>
 </html>
