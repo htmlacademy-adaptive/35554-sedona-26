@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="main-header">
@@ -49,37 +50,37 @@
 
       <ul class="content__list gallery">
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="Дорога среди равнин">
-          <h3 class="gallery__title">неродные просторы</h3>
-          <span class="gallery__author">Автор фото: <cite>Борис</cite></span>
-          <a class="gallery__likes" href="#">
-            <span class="visually-hidden">Количество лайков</span>
+          <a class="galerry__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="дорога среди равнин">
+            <h3 class="gallery__title">Неродные просторы</h3>
+            <p class="gallery__author">автор фото: <cite>борис</cite></p>
+            <span class="visually-hidden">количество лайков</span>
             <span class="gallery__number-likes">1350</span>
           </a>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Местные растения">
-          <h3 class="gallery__title">Местная растительность</h3>
-          <span class="gallery__author">Автор фото: <cite>Сергей</cite></span>
-          <a class="gallery__likes" href="#">
+          <a class="gallery__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Местные растения">
+            <h3 class="gallery__title">Местная растительность</h3>
+            <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
             <span class="visually-hidden">Количество лайков</span>
             <span class="gallery__number-likes">146</span>
           </a>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Горный серпантин">
-          <h3 class="gallery__title">Дорога на север</h3>
-          <span class="gallery__author">Автор фото: <cite>Петр</cite></span>
-          <a class="gallery__likes" href="#">
+          <a class="gallery__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Горный серпантин">
+            <h3 class="gallery__title">Дорога на север</h3>
+            <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
             <span class="visually-hidden">Количество лайков</span>
             <span class="gallery__number-likes">96</span>
           </a>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
-          <h3 class="gallery__title">Мост дьявола</h3>
-          <span class="gallery__author">Автор фото: <cite>Антон</cite></span>
-          <a class="gallery__likes" href="#">
+          <a class="gallery__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            <h3 class="gallery__title">Мост дьявола</h3>
+            <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
             <span class="visually-hidden">Количество лайков</span>
             <span class="gallery__number-likes">254</span>
           </a>
@@ -103,10 +104,9 @@
 
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer__hashtag hashtag">
-      <a class="hashtag__link" href="#">#visitsedona</a>
-    </div>
-    <div class="main-footer__social social">
+    <a class="main-footer__hashtag-link" href="#">#visitsedona</a>
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -124,15 +124,14 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
+    </section>
+    <p class="main-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
       </a>
-    </div>
+    </p>
   </div>
 </footer>
-
 </body>
 </html>
