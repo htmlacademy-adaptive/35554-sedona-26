@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+<header class="main-header">
+  <a class="main-header__logo" href="#">
+    <img class="main-header__logo-image" src="img/logo.svg" alt="Город Седона" width="185" height="96">
+  </a>
+  <nav class="main-navigation">
+    <button class="main-navigation__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-navigation__wrapper">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item main-navigation__item--current">
+          <a class="main-navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">Форма Отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="main-container">
+  <h1 class="visually-hidden">Фото и видео города Седона</h1>
+  <section class="intro">
+    <div class="intro__wrapper">
+      <h2 class="visually-hidden">Седона</h2>
+      <img class="intro__logo" src="img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="content__wrapper">
+      <h2 class="content__title">Фото и видео</h2>
+      <p class="content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <ul class="content__list gallery">
+        <li class="gallery__item">
+          <a class="galerry__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="дорога среди равнин">
+            <h3 class="gallery__title">Неродные просторы</h3>
+            <p class="gallery__author">автор фото: <cite>борис</cite></p>
+            <span class="visually-hidden">количество лайков</span>
+            <span class="gallery__number-likes">1350</span>
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Местные растения">
+            <h3 class="gallery__title">Местная растительность</h3>
+            <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
+            <span class="visually-hidden">Количество лайков</span>
+            <span class="gallery__number-likes">146</span>
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Горный серпантин">
+            <h3 class="gallery__title">Дорога на север</h3>
+            <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
+            <span class="visually-hidden">Количество лайков</span>
+            <span class="gallery__number-likes">96</span>
+          </a>
+        </li>
+        <li class="gallery__item">
+          <a class="gallery__link" href="#">
+            <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            <h3 class="gallery__title">Мост дьявола</h3>
+            <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
+            <span class="visually-hidden">Количество лайков</span>
+            <span class="gallery__number-likes">254</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="video__wrapper">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <img class="video__content-image" src="./img/catalog/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация о Седоне">
+      <button class="video__button" type="button">
+        <span class="visually-hidden">Включить видео</span>
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <a class="main-footer__hashtag-link" href="#">#visitsedona</a>
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <p class="main-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
