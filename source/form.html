@@ -39,18 +39,18 @@
   <section class="intro">
     <div class="intro__wrapper">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="intro__logo" src="./img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+      <img class="intro__logo intro__logo--short" src="./img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
     </div>
   </section>
 
   <section class="reviews">
     <div class="reviews__wrapper">
-      <h2 class="reviews__title">Оставьте свой отзыв</h2>
+      <h2 class="reviews__title heading">Оставьте свой отзыв</h2>
       <p class="reviews__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
       <form class="reviews__form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="reviews__field-group field-group">
-          <legend class="field-group__title">Представьтесь:</legend>
+          <legend class="field-group__title heading">Представьтесь:</legend>
           <div class="field-group__name">
             <label for="name" class="field-group__form-label">Имя<sup>*</sup>:</label>
             <input class="field-group__form-input" type="text" name="name" id="name" value="Пётр" required>
@@ -66,7 +66,7 @@
         </fieldset>
 
         <fieldset class="reviews__field-group field-group">
-          <legend class="field-group__title">Контактная информация:</legend>
+          <legend class="field-group__title heading">Контактная информация:</legend>
           <div class="field-group__phone">
             <label for="phone" class="field-group__form-label">Контактный телефон<sup>*</sup>:</label>
             <input class="field-group__form-input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
@@ -78,26 +78,23 @@
         </fieldset>
 
         <fieldset class="reviews__field-group field-group">
-          <legend class="field-group__title">Ваше общее впечатление:</legend>
+          <legend class="field-group__title heading">Ваше общее впечатление:</legend>
           <ul class="field-group__list">
             <li class="field-group__item">
-              <label class="field-group__form-label">
+              <label class="field-group__form-label field-group__form-label--list">
                 <input class="field-group__form-input visually-hidden" type="radio" name="impression" checked>
-                <span class="field-group__control-mark field-group__control-mark--radio"></span>
                 Скорее положительное
               </label>
             </li>
             <li class="field-group__item">
-              <label class="field-group__form-label">
+              <label class="field-group__form-label field-group__form-label--list">
                 <input class="field-group__form-input visually-hidden" type="radio" name="impression">
-                <span class="field-group__control-mark field-group__control-mark--radio"></span>
                 Скорее отрицательное
               </label>
             </li>
             <li class="field-group__item">
-              <label class="field-group__form-label">
+              <label class="field-group__form-label field-group__form-label--list">
                 <input class="field-group__form-input visually-hidden" type="radio" name="impression">
-                <span class="field-group__control-mark field-group__control-mark--radio"></span>
                 Затрудняюсь ответить
               </label>
             </li>
@@ -105,33 +102,29 @@
         </fieldset>
 
         <fieldset class="reviews__field-group field-group">
-          <legend class="field-group__title">Посещенные достопримечательности:</legend>
+          <legend class="field-group__title heading">Посещенные достопримечательности:</legend>
           <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field-group__form-label">
-                <input class="field-group__form-input visually-hidden" type="checkbox" name="bridge" checked>
-                <span class="field-group__control-mark"></span>
+            <li class="field-group__item field-group__item--checkbox">
+              <label class="field-group__form-label field-group__form-label--list">
+                <input class="field-group__form-input field-group__form-input--checkbox visually-hidden" type="checkbox" name="bridge" checked>
                 Мост Дьявола
               </label>
             </li>
-            <li class="field-group__item">
-              <label class="field-group__form-label">
-                <input class="field-group__form-input visually-hidden" type="checkbox" name="mount" checked>
-                <span class="field-group__control-mark"></span>
+            <li class="field-group__item field-group__item--checkbox">
+              <label class="field-group__form-label field-group__form-label--list">
+                <input class="field-group__form-input field-group__form-input--checkbox visually-hidden" type="checkbox" name="mount" checked>
                 Гора-Колокол
               </label>
             </li>
-            <li class="field-group__item">
-              <label class="field-group__form-label">
-                <input class="field-group__form-input visually-hidden" type="checkbox" name="park" checked>
-                <span class="field-group__control-mark"></span>
+            <li class="field-group__item field-group__item--checkbox">
+              <label class="field-group__form-label field-group__form-label--list">
+                <input class="field-group__form-input field-group__form-input--checkbox visually-hidden" type="checkbox" name="park" checked>
                 Слайд-парк
               </label>
             </li>
-            <li class="field-group__item">
-              <label class="field-group__form-label">
-                <input class="field-group__form-input visually-hidden" type="checkbox" name="rocks">
-                <span class="field-group__control-mark"></span>
+            <li class="field-group__item field-group__item--checkbox">
+              <label class="field-group__form-label field-group__form-label--list">
+                <input class="field-group__form-input field-group__form-input--checkbox visually-hidden" type="checkbox" name="rocks">
                 Красные скалы
               </label>
             </li>
@@ -139,8 +132,8 @@
         </fieldset>
 
         <div class="reviews__field-group field-group">
-          <label for="review-text" class="field-group__form-label">Опишите свои эмоции:</label>
-          <textarea class="field-group__form-input" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги">
+          <label for="review-text" class="field-group__form-label field-group__form-label--textarea heading">Опишите свои эмоции:</label>
+          <textarea class="field-group__form-input field-group__form-input--textarea" rows="10" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги">
           </textarea>
         </div>
 
@@ -201,19 +194,19 @@
   </div>
 </footer>
 
-<div class="modal modal-error">
-  <div class="modal-error__wrapper">
-    <h2 class="modal-error__title">Что-то пошло не так!</h2>
-    <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal-error__button button" type="button">Ok</button>
+<div class="modal">
+  <div class="modal__wrapper">
+    <h2 class="modal__title heading">Что-то пошло не так!</h2>
+    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button button" type="button">Ok</button>
   </div>
 </div>
 
-<div class="modal modal-correct">
-  <div class="modal-correct__wrapper">
-    <h2 class="modal-correct__title">Ваш отзыв отправлен!</h2>
-    <p class="modal-correct__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    <button class="modal-correct__button button" type="button">Закрыть окно</button>
+<div class="modal">
+  <div class="modal__wrapper">
+    <h2 class="modal__title modal__title--correct heading">Ваш отзыв отправлен!</h2>
+    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="modal__button modal__button--correct button" type="button">Закрыть окно</button>
   </div>
 </div>
 

@@ -15,7 +15,7 @@
 
 .advantages__item--accent {
   color: #ffffff;
-  background-color: #81b3d2;
+  background-color: $primary-back-color;
 }
 
 .advantages__item--food,
@@ -26,22 +26,17 @@
 
 .advantages__title {
   margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
 }
 
 .advantages__title--accent {
   color: #ffffff;
 }
 
-.advantages__number{
+.advantages__number {
   text-transform: uppercase;
 }
 
-.advantages__description{
+.advantages__description {
   margin: 0;
   text-transform: uppercase;
 }

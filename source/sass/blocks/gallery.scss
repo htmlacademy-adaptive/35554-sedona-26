@@ -1,0 +1,39 @@
+.gallery__link {
+  display: block;
+  padding-bottom: 25px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.gallery__image {
+  display: block;
+}
+
+.gallery__title {
+  margin: 0;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.gallery__author {
+  margin: 0;
+  text-decoration: none;
+  padding-bottom: 10px;
+
+  cite {
+    font-style: normal;
+  }
+}
+
+.gallery__button {
+  padding: 0;
+  margin-right: 14px;
+  border: none;
+  background-color: transparent;
+}
+
+.gallery__button-icon {
+  fill: #000000;
+  opacity: 0.3;
+}

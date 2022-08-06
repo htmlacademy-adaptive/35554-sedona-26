@@ -1,0 +1,34 @@
+.video__wrapper {
+  position: relative;
+  width: 284px;
+  text-align: center;
+}
+
+.video__title {
+  margin: 0;
+}
+
+.video__description {
+  margin: 0;
+  padding: 26px 15px 38px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.video__content-image {
+  display: block;
+}
+
+.video__button {
+  position: absolute;
+  left: 120px;
+  bottom: 60px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.video__button-icon {
+  fill: #ffffff;
+  opacity: 0.7;
+}
