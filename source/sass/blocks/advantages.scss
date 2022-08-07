@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #333333;
+  color: $secondary-color;
 }
 
 .advantages__item {
@@ -10,26 +10,33 @@
   padding-top: 23px;
   padding-bottom: 22px;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: $advantages-color;
+
+  &--accent {
+    color: $white-color;
+    background-color: $primary-back-color;
+  }
+
+  &--qualities {
+    padding: 0;
+  }
+
+  &--quality {
+    background-color: $white-color;
+  }
 }
 
-.advantages__item--accent {
-  color: #ffffff;
-  background-color: $primary-back-color;
-}
-
-.advantages__item--food,
-.advantages__item--house,
-.advantages__item--souvenirs {
-  background-color: #ffffff;
+.advantages__list-qualities {
+  padding: 0;
+  list-style: none;
 }
 
 .advantages__title {
   margin: 0;
-}
 
-.advantages__title--accent {
-  color: #ffffff;
+  &--accent {
+    color: $white-color;
+  }
 }
 
 .advantages__number {

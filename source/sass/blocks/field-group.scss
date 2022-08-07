@@ -11,10 +11,10 @@
 .field-group__item {
   position: relative;
   margin-bottom: 16px;
-}
 
-.field-group__item:last-child {
-  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .field-group__item::before {
@@ -35,7 +35,7 @@
   position: absolute;
   left: 15px;
   top: 15px;
-  background-color: #333333;
+  background-color: $secondary-color;
   border-radius: 50%;
 }
 
@@ -47,7 +47,7 @@
   display: block;
   padding-left: 16px;
   text-transform: uppercase;
-  color: #333333;
+  color: $secondary-color;
 
   &--list {
     padding-top: 10px;
@@ -57,7 +57,7 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: none;
-    color: #000000;
+    color: $black-color;
   }
 
   &--textarea {
@@ -75,7 +75,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $black-color;
   background-color: $input-back-color;
 
   &--textarea {

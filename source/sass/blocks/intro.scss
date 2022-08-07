@@ -6,12 +6,12 @@
   display: block;
   padding-top: 90px;
   padding-bottom: 85px;
-  background: #3f5e72 url("../img/back-mobile.jpg") no-repeat top;
-}
+  background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
 
-.intro__logo--short {
-  padding: 52px 45px 67px;
-  background: #3f5e72 url("../img/catalog/back-desktop.jpg") no-repeat top;
+  &--short {
+    padding: 52px 45px 67px;
+    background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
+  }
 }
 
 .intro__slogan {

@@ -12,7 +12,7 @@
   margin: 0;
   padding: 26px 15px 38px;
   text-transform: uppercase;
-  color: #333333;
+  color: $secondary-color;
 }
 
 .video__content-image {
@@ -29,6 +29,6 @@
 }
 
 .video__button-icon {
-  fill: #ffffff;
+  fill: $white-color;
   opacity: 0.7;
 }
