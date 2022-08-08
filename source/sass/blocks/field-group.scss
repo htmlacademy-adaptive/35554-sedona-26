@@ -17,30 +17,10 @@
   }
 }
 
-.field-group__item::before {
-  content: "";
-  width: 46px;
-  height: 46px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: $input-back-color;
-  border-radius: 50%;
-}
-
-.field-group__item::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  background-color: $secondary-color;
-  border-radius: 50%;
-}
-
-.field-group__item--checkbox::before {
-  border-radius: initial;
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .field-group__form-label {
@@ -49,19 +29,49 @@
   text-transform: uppercase;
   color: $secondary-color;
 
-  &--list {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 62px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: none;
-    color: $black-color;
-  }
-
   &--textarea {
     padding: 24px 0 20px;
+  }
+}
+
+.field-group__label-list {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 62px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  color: $black-color;
+
+  &::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $input-back-color;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+
+  &--radio::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    opacity: 0;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    z-index: 2;
   }
 }
 
@@ -90,14 +100,13 @@
   }
 }
 
-.field-group__form-input--checkbox:checked + .field-group__item--checkbox::after {
-  background-image: url("../img/tick.svg.svg");
+.field-group__input-checkbox:checked + .field-group__label-list::before {
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 22px 16px;
 }
 
-.field-group__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.field-group__input-radio:checked + .field-group__label-list::after {
+  opacity: 1;
 }
