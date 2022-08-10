@@ -1,8 +1,10 @@
 .intro__wrapper {
   height: 389px;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
-  background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
+  //background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
+  background: $intro-back-color url("../img/background.jpg") no-repeat top;
+  background-size: 902px 214px;
 
   @media (min-width: $tablet-width) {
     height: 518px;
@@ -11,6 +13,14 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+  }
+
+  &--short {
+    height: 214px;
+
+    @media (min-width: $tablet-width) {
+      height: 518px;
+    }
   }
 }
 
@@ -21,6 +31,6 @@
 
   &--short {
     padding: 52px 0 67px;
-    background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
+    //background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
   }
 }

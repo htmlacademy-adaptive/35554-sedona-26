@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +38,7 @@
 <main class="main-container">
   <h1 class="visually-hidden">Фото и видео города Седона</h1>
   <section class="intro">
-    <div class="intro__wrapper">
+    <div class="intro__wrapper intro__wrapper--short">
       <h2 class="visually-hidden">Седона</h2>
       <img class="intro__logo intro__logo--short" src="img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
     </div>
@@ -48,60 +49,74 @@
       <h2 class="content__title heading">Фото и видео</h2>
       <p class="content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <ul class="content__list gallery">
-        <li class="gallery__item">
+        <li class="gallery__item gallery__item--first">
           <a class="gallery__link" href="#">
             <img class="gallery__image" src="./img/catalog/photo-1-mobile.jpg" width="280" height="280" alt="дорога среди равнин">
-            <h3 class="gallery__title">Неродные просторы</h3>
-            <p class="gallery__author">Автор фото: <cite>Борис</cite></p>
-            <button class="gallery__button" type="button">
-              <span class="visually-hidden">количество лайков</span>
-              <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-            </button>
-            <span class="gallery__number-likes">1350</span>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Неродные просторы</h3>
+              <p class="gallery__author">Автор фото: <cite>Борис</cite></p>
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                </svg>
+              </button>
+              <span class="gallery__number-likes">1350</span>
+            </div>
           </a>
         </li>
         <li class="gallery__item">
           <a class="gallery__link" href="#">
             <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" width="280" height="280" alt="Местные растения">
-            <h3 class="gallery__title">Местная растительность</h3>
-            <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
-            <button class="gallery__button" type="button">
-              <span class="visually-hidden">количество лайков</span>
-              <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-            </button>
-            <span class="gallery__number-likes">146</span>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Местная растительность</h3>
+              <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                </svg>
+              </button>
+              <span class="gallery__number-likes">146</span>
+            </div>
           </a>
         </li>
         <li class="gallery__item">
           <a class="gallery__link" href="#">
             <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" width="280" height="280" alt="Горный серпантин">
-            <h3 class="gallery__title">Дорога на север</h3>
-            <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
-            <button class="gallery__button" type="button">
-              <span class="visually-hidden">количество лайков</span>
-              <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-            </button>
-            <span class="gallery__number-likes">96</span>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Дорога на север</h3>
+              <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                </svg>
+              </button>
+              <span class="gallery__number-likes">96</span>
+            </div>
           </a>
         </li>
         <li class="gallery__item">
           <a class="gallery__link" href="#">
             <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
-            <h3 class="gallery__title">Мост дьявола</h3>
-            <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
-            <button class="gallery__button" type="button">
-              <span class="visually-hidden">количество лайков</span>
-              <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-            </button>
-            <span class="gallery__number-likes">254</span>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Мост дьявола</h3>
+              <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                </svg>
+              </button>
+              <span class="gallery__number-likes">254</span>
+            </div>
           </a>
         </li>
       </ul>
