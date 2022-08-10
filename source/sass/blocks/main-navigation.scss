@@ -1,12 +1,13 @@
 .main-navigation__toggle {
-  position: absolute;
-  top: 17px;
-  right: 20px;
   width: 23px;
   height: 23px;
   padding: 0;
   border: none;
   background-color: $primary-back-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__icon {
@@ -14,10 +15,20 @@
 }
 
 .main-navigation__list {
-  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.main-navigation__item {
   background-color: $primary-back-color;
 }
 

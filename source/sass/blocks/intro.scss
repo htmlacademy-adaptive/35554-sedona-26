@@ -1,32 +1,26 @@
 .intro__wrapper {
-  width: 284px;
+  height: 389px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .intro__logo {
   display: block;
-  padding-top: 90px;
-  padding-bottom: 85px;
-  background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
+  margin: 0 auto;
+  padding: 90px 0 85px;
 
   &--short {
-    padding: 52px 45px 67px;
+    padding: 52px 0 67px;
     background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
   }
-}
-
-.intro__slogan {
-  margin: 0;
-  padding: 32px 10px 35px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.intro__reasons {
-  margin: 0;
-  padding-bottom: 32px;
-  text-transform: uppercase;
-  text-align: center;
 }
