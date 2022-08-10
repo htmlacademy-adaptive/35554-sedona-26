@@ -1,10 +1,26 @@
 .main-footer__wrapper {
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 29px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 663px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 975px;
+    padding-left: 105px;
+    padding-right: 120px;
+  }
 }
 
 .main-footer__hashtag-link {
   display: block;
-  padding-top: 38px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -14,6 +30,7 @@
 }
 
 .main-footer__social {
+  width: 156px;
   padding-top: 33px;
   padding-bottom: 40px;
 }

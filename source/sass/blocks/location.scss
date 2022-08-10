@@ -1,6 +1,16 @@
+.location__wrapper {
+  min-width: 320px;
+}
+
 .location__map {
   display: block;
+  width: 100%;
   background-image: url("../img/map-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

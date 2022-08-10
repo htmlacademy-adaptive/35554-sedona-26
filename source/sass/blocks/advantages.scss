@@ -1,13 +1,16 @@
 .advantages__wrapper {
-  width: 320px;
+  width: 284px;
+  padding: 0 18px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    padding: 0;
   }
 }
 
