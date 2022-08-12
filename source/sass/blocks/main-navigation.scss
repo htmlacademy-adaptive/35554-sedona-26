@@ -1,13 +1,20 @@
-.main-navigation__wrapper {
+.main-navigation {
+  width: auto;
+  min-width: 56px;
   background-color: $primary-back-color;
 }
 
 .main-navigation__toggle {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  z-index: 2;
   width: 23px;
   height: 23px;
   padding: 0;
   border: none;
-  background-color: $primary-back-color;
+  cursor: pointer;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -16,16 +23,54 @@
 
 .main-navigation__icon {
   fill: $white-color;
+
+  &--closed {
+    fill: $primary-back-color;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation--closed .main-navigation__icon--opened {
+  display: none;
+}
+
+.main-navigation--opened .main-navigation__icon--closed {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-navigation--closed .main-navigation__item {
+    display: none;
+  }
+}
+
+.main-navigation--opened .main-navigation__wrapper {
+  position: absolute;
+  width: 320px;
+  padding: 0;
+  top: 0;
+  left: 0;
 }
 
 .main-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.main-navigation__item {
-  background-color: $primary-back-color;
+  @media (min-width: $tablet-width) {
+    width: 690px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1038px;
+  }
 }
 
 .main-navigation__link {
@@ -38,4 +83,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white-color;
+  background-color: $primary-back-color;
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
 }

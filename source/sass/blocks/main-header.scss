@@ -1,7 +1,9 @@
 .main-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: $white-color;
+  color: $black-color;
 }
 
 .main-header__logo {

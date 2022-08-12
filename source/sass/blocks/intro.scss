@@ -1,7 +1,6 @@
 .intro__wrapper {
-  //background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
-  background: $intro-back-color url("../img/background.jpg") no-repeat top;
-  background-size: 902px 214px;
+  background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
+  background-size: cover;
 }
 
 .intro__logo {
@@ -15,7 +14,6 @@
 
   &--short {
     padding: 52px 0 67px;
-    //background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
 
     @media (min-width: $tablet-width) {
       padding: 95px 0 117px;
