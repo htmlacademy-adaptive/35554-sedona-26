@@ -1,16 +1,13 @@
 .advantages__wrapper {
-  width: 284px;
-  padding: 0 18px;
+  width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    padding: 0;
   }
 }
 
@@ -45,7 +42,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 256px);
-    grid-template-rows: 256px 320px 256px 256px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,15 +64,8 @@
     }
   }
 
-  &--qualities {
-    padding: 0;
-
-    @media (min-width: $tablet-width) {
-      grid-column: 1/4;
-    }
-  }
-
   &--quality {
+    color: $secondary-color;
     background-color: $white-color;
   }
 }

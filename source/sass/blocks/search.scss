@@ -1,20 +1,13 @@
 .search__wrapper {
-  width: 284px;
-  margin: 0 auto;
-  padding: 38px 18px 49px;
+  padding: 38px 0 49px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding: 61px 0 58px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }
 
@@ -44,7 +37,7 @@
 
 .search__button {
   display: block;
-  padding: 16px 49px;
+  padding: 16px 45px;
 
   @media (min-width: $tablet-width) {
     width: 458px;

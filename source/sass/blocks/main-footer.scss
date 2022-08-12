@@ -1,11 +1,9 @@
 .main-footer__wrapper {
-  margin: 0 auto;
   padding-top: 38px;
   padding-bottom: 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 663px;
     display: flex;
     justify-content: space-between;
     padding-left: 45px;
@@ -13,7 +11,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 975px;
     padding-left: 105px;
     padding-right: 120px;
   }

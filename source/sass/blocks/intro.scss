@@ -1,27 +1,7 @@
 .intro__wrapper {
-  height: 389px;
-  width: 320px;
-  margin: 0 auto;
   //background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
   background: $intro-back-color url("../img/background.jpg") no-repeat top;
   background-size: 902px 214px;
-
-  @media (min-width: $tablet-width) {
-    height: 518px;
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
-
-  &--short {
-    height: 214px;
-
-    @media (min-width: $tablet-width) {
-      height: 518px;
-    }
-  }
 }
 
 .intro__logo {
@@ -29,8 +9,20 @@
   margin: 0 auto;
   padding: 90px 0 85px;
 
+  @media (min-width: $tablet-width) {
+    padding: 78px 0 90px;
+  }
+
   &--short {
     padding: 52px 0 67px;
     //background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
+
+    @media (min-width: $tablet-width) {
+      padding: 95px 0 117px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 101px 0 120px;
+    }
   }
 }
