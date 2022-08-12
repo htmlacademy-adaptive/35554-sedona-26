@@ -1,32 +1,28 @@
 .intro__wrapper {
-  width: 284px;
+  //background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
+  background: $intro-back-color url("../img/background.jpg") no-repeat top;
+  background-size: 902px 214px;
 }
 
 .intro__logo {
   display: block;
-  padding-top: 90px;
-  padding-bottom: 85px;
-  background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
+  margin: 0 auto;
+  padding: 90px 0 85px;
+
+  @media (min-width: $tablet-width) {
+    padding: 78px 0 90px;
+  }
 
   &--short {
-    padding: 52px 45px 67px;
-    background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
+    padding: 52px 0 67px;
+    //background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
+
+    @media (min-width: $tablet-width) {
+      padding: 95px 0 117px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 101px 0 120px;
+    }
   }
-}
-
-.intro__slogan {
-  margin: 0;
-  padding: 32px 10px 35px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.intro__reasons {
-  margin: 0;
-  padding-bottom: 32px;
-  text-transform: uppercase;
-  text-align: center;
 }

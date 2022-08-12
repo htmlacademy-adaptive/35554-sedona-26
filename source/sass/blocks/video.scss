@@ -1,7 +1,15 @@
 .video__wrapper {
   position: relative;
-  width: 284px;
+  padding-top: 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+  }
 }
 
 .video__title {
