@@ -1,5 +1,7 @@
 .intro__wrapper {
-  background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
+  background:
+    url("../img/intro-triangle.svg") no-repeat center,
+    $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
   background-size: cover;
 }
 
