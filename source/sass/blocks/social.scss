@@ -2,11 +2,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .social__item {
   min-width: 24px;
   min-height: 24px;
+}
+
+.social__item + .social__item {
+  margin-left: 6px;
 }
 
 .social__link {
