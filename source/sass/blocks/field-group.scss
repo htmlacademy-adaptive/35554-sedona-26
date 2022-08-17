@@ -5,14 +5,9 @@
 .field-group__title {
   padding-bottom: 20px;
   text-align: center;
-}
 
-.field-group__item {
-  position: relative;
-  margin-bottom: 16px;
-
-  &:last-child {
-    margin: 0;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
   }
 }
 
@@ -24,6 +19,42 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 53px;
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      padding: 0 84px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 31px 40px;
+      justify-content: start;
+    }
+  }
+}
+
+.field-group__item {
+  position: relative;
+  width: 280px;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &--checkbox {
+    width: 224px;
+
+    @media (min-width: $desktop-width) {
+      width: 172px;
+      margin-right: 64px;
+    }
   }
 }
 
