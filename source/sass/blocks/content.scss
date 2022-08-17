@@ -1,3 +1,10 @@
+.content__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 1200px;
+  }
+}
+
 .content__title {
   margin: 0;
   padding-top: 30px;
@@ -6,8 +13,9 @@
 }
 
 .content__description {
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0 auto;
+  max-width: 458px;
+  padding: 0 20px 20px;
   text-align: center;
   text-transform: uppercase;
 
@@ -16,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 370px 65px;
+    padding: 0 265px 65px;
   }
 }
 
@@ -27,12 +35,10 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
-    grid-template-rows: 480px 347px 347px;
+    grid-template-columns: repeat(2, 50%);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: 400px 267px;
+    grid-template-columns: repeat(3, 33.333%);
   }
 }

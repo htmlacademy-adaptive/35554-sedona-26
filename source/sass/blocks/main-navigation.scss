@@ -1,21 +1,15 @@
 .main-navigation {
+  position: relative;
   width: auto;
-  min-width: 56px;
-  background-color: $primary-back-color;
-}
-
-.main-navigation__wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
+  min-height: 56px;
+  background-color: $white-color;
 }
 
 .main-navigation__toggle {
   position: absolute;
   top: 17px;
   right: 16px;
-  z-index: 2;
+  z-index: 5;
   width: 23px;
   height: 23px;
   padding: 0;
@@ -58,8 +52,28 @@
   }
 }
 
-.main-navigation--opened .main-navigation__wrapper {
-  width: 320px;
+.main-navigation--opened .main-navigation__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 7px;
+    z-index: 3;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
 }
 
 .main-navigation__list {
@@ -68,21 +82,19 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 690px;
+    min-width: 768px;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(5, 153px);
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1038px;
-    grid-template-columns: repeat(5, 240px);
+    grid-template-columns: repeat(5, 20%);
+    margin: 0 auto;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-navigation__item {
+.main-navigation__item {
+  z-index: 4;
 
-    &:nth-child(3) {
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
       grid-column: -2/-3;
     }
   }
@@ -101,6 +113,15 @@
   background-color: $primary-back-color;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
 
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $active-color;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 18px 0 17px;
     background: none;
@@ -108,5 +129,20 @@
     color: $black-color;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: $primary-back-color;
+      background-color: $white-color;
+    }
+
+    &:active {
+      color: $black-color;
+      opacity: 0.3;
+      background-color: $white-color;
+    }
+
+    &--current {
+      color: $menu-current-color;
+    }
   }
 }

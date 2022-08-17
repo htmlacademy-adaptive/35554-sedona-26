@@ -1,6 +1,6 @@
 .intro__wrapper {
   background:
-    url("../img/intro-triangle.svg") no-repeat center,
+    url("../img/intro-triangl.svg") no-repeat center,
     $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
   background-size: cover;
 }
@@ -18,6 +18,8 @@
     padding: 52px 0 67px;
 
     @media (min-width: $tablet-width) {
+      width: 457px;
+      height: 78px;
       padding: 95px 0 117px;
     }
 

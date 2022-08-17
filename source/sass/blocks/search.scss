@@ -1,13 +1,14 @@
 .search__wrapper {
   padding: 38px 0 49px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 61px 0 58px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
   }
 }
 
@@ -26,6 +27,9 @@
 
 .search__description {
   margin: 0;
+  max-width: 435px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 32px;
   text-transform: uppercase;
   color: $secondary-color;
@@ -37,6 +41,7 @@
 
 .search__button {
   display: block;
+  max-width: 458px;
   padding: 16px 45px;
 
   @media (min-width: $tablet-width) {

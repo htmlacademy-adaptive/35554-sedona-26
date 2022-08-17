@@ -1,18 +1,16 @@
+.main-footer {
+  background-color: $white-color;
+}
+
 .main-footer__wrapper {
-  padding-top: 38px;
-  padding-bottom: 29px;
+  padding: 38px 60px 29px 45px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 105px;
-    padding-right: 120px;
+    align-items: center;
+    padding: 36px 120px 36px 104px;
   }
 }
 
@@ -30,6 +28,10 @@
   min-width: 156px;
   padding-top: 33px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-footer__copyright {
