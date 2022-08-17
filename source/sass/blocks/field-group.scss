@@ -20,6 +20,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .field-group__form-label {
@@ -75,7 +80,7 @@
 }
 
 .field-group__form-input {
-  width: 280px;
+  width: 100%;
   max-height: 58px;
   padding: 16px;
   border: none;
@@ -86,6 +91,10 @@
   font-weight: 700;
   color: $black-color;
   background-color: $input-back-color;
+
+  @media (min-width: $tablet-width) {
+    width: 86.5%;
+  }
 
   &--textarea {
     display: block;
