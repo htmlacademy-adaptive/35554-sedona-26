@@ -18,23 +18,29 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    max-width: 872px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 36px;
+    gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: start;
     padding: 17px 53px;
+    gap: 28px;
   }
 
   &--checkbox {
     @media (min-width: $tablet-width) {
       padding: 0 84px;
+      gap: 16px 32px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 31px 40px;
-      justify-content: start;
+      gap: 64px;
+      align-items: center;
     }
   }
 }
@@ -44,16 +50,19 @@
   width: 280px;
   margin-bottom: 16px;
 
-  &:last-child {
+  @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: max-content;
   }
 
   &--checkbox {
     width: 224px;
 
     @media (min-width: $desktop-width) {
-      width: 172px;
-      margin-right: 64px;
+      width: max-content;
     }
   }
 }
@@ -66,6 +75,12 @@
 
   &--textarea {
     padding: 24px 0 20px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 0 28px;
+      font-size: 21px;
+    }
   }
 }
 
@@ -132,6 +147,13 @@
     resize: none;
     max-height: 150px;
     margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      max-height: 160px;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+    }
   }
 
   &::placeholder {

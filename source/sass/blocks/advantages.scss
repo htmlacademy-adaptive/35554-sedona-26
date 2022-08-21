@@ -43,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 33.333%);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -72,17 +72,31 @@
       grid-column: 1/4;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
   &--decor {
+    position: relative;
     padding-top: 37px;
-    background: $primary-back-color url("../img/white-block.svg") no-repeat 50% 0;
-    background-size: 100% auto;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 37px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $white-color;
+      clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 0;
-      background-image: none;
     }
   }
 
@@ -101,11 +115,7 @@
 
       @media (min-width: $tablet-width) {
         top: 60px;
-        left: 90px;
-      }
-
-      @media (min-width: $desktop-width) {
-        left: 161px;
+        left: calc(50% - 37px);
       }
     }
 
@@ -185,7 +195,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 33.333%);
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
 }
@@ -236,12 +246,21 @@
     padding-top: 23px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 55px;
-    padding-right: 55px;
+  &--accent {
+    @media (min-width: $tablet-width) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
   }
 }
 
 .advantages__image {
   flex: 0 1 66.667%;
+  display: block;
+  margin: 0 auto;
 }
