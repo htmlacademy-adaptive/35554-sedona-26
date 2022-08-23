@@ -12,26 +12,26 @@
     <a class="main-header__logo" href="#">
       <img class="main-header__logo-image" src="img/logo.svg" alt="Город Седона" width="185" height="96">
     </a>
-    <nav class="main-navigation main-navigation--closed">
+    <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
-        <svg class="main-navigation__icon main-navigation__icon--closed" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-navigation__icon main-navigation__icon--closed main-navigation__icon--visible" width="23" height="22" fill="none" id="visible" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
         </svg>
-        <svg class="main-navigation__icon main-navigation__icon--opened" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-navigation__icon main-navigation__icon--invisible" width="23" height="23" fill="none" id="invisible" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-navigation__list">
+      <ul class="main-navigation__list main-navigation__list--visible">
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">Главная</a>
+          <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__link--current" href="form.html">Форма Отзыва</a>
+          <a class="main-navigation__link" href="form.html">Форма Отзыва</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="#">Html academy</a>
@@ -55,17 +55,17 @@
         <p class="reviews__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
         <form class="reviews__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="reviews__field-group field-group">
+          <fieldset class="reviews__field-group reviews__field-group--decor field-group">
             <legend class="field-group__title heading">Представьтесь:</legend>
-            <div class="field-group__name">
+            <div class="field-group__wrap">
               <label for="name" class="field-group__form-label">Имя<sup>*</sup>:</label>
               <input class="field-group__form-input" type="text" name="name" id="name" value="Пётр" required>
             </div>
-            <div class="field-group__surname">
+            <div class="field-group__wrap">
               <label for="surname" class="field-group__form-label">Фамилия<sup>*</sup>:</label>
               <input class="field-group__form-input" type="text" name="surname" id="surname" value="Пустота" required>
             </div>
-            <div class="field-group__patronymic">
+            <div class="field-group__wrap">
               <label for="patronymic" class="field-group__form-label">Отчество:</label>
               <input class="field-group__form-input" type="text" name="patronymic" id="patronymic" value="Викторович">
             </div>
@@ -73,11 +73,11 @@
 
           <fieldset class="reviews__field-group field-group">
             <legend class="field-group__title heading">Контактная информация:</legend>
-            <div class="field-group__phone">
+            <div class="field-group__wrap field-group__wrap--decor">
               <label for="phone" class="field-group__form-label">Контактный телефон<sup>*</sup>:</label>
               <input class="field-group__form-input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
             </div>
-            <div class="field-group__email">
+            <div class="field-group__wrap field-group__wrap--decor field-group__wrap--email">
               <label for="email" class="field-group__form-label">Электронная почта<sup>*</sup>:</label>
               <input class="field-group__form-input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </div>
@@ -123,8 +123,8 @@
             </ul>
           </fieldset>
 
-          <div class="reviews__field-group reviews__field-group--row field-group">
-            <label for="review-text" class="field-group__form-label field-group__form-label--textarea heading">Опишите свои эмоции:</label>
+          <div class="reviews__field-group reviews__field-group--row reviews__field-group--line field-group">
+            <label class="field-group__form-label field-group__form-label--textarea heading" for="review-text" >Опишите свои эмоции:</label>
             <textarea class="field-group__form-input field-group__form-input--textarea" rows="10" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги">
           </textarea>
           </div>

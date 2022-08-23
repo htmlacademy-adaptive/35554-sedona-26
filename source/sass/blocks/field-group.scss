@@ -3,11 +3,49 @@
 }
 
 .field-group__title {
+  padding-top: 24px;
   padding-bottom: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 28px;
+    background-color: $white-color;
+  }
+}
+
+.field-group__wrap {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 86.5%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &--decor {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background: $input-decor-color url("../img/phone.svg") no-repeat center;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+    }
+  }
+
+  &--email {
+    &::after {
+      background-image: url("../img/mail.svg");
+    }
   }
 }
 
@@ -48,7 +86,10 @@
 .field-group__item {
   position: relative;
   width: 280px;
-  margin-bottom: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -128,7 +169,7 @@
 .field-group__form-input {
   width: 100%;
   max-height: 58px;
-  padding: 16px;
+  padding: 16px 74px 16px 16px;
   border: none;
   box-sizing: border-box;
   font-family: inherit;
@@ -137,10 +178,6 @@
   font-weight: 700;
   color: $black-color;
   background-color: $input-back-color;
-
-  @media (min-width: $tablet-width) {
-    width: 86.5%;
-  }
 
   &--textarea {
     display: block;

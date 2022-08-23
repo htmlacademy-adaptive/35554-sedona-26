@@ -12,25 +12,23 @@
     <a class="main-header__logo" href="#">
       <img class="main-header__logo-image" src="img/logo.svg" alt="Город Седона" width="185" height="96">
     </a>
-    <nav class="main-navigation main-navigation--closed">
+    <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
-        <svg class="main-navigation__icon main-navigation__icon--closed" width="23" height="22" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-navigation__icon main-navigation__icon--closed main-navigation__icon--visible" width="23" height="22" fill="none" id="visible" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
         </svg>
-        <svg class="main-navigation__icon main-navigation__icon--opened" width="23" height="23" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-navigation__icon main-navigation__icon--invisible" width="23" height="23" fill="none" id="invisible" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-navigation__list">
+      <ul class="main-navigation__list main-navigation__list--visible">
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">Главная</a>
+          <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__link--current" href="catalog.html">Фото и видео</a>
+          <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="form.html">Форма Отзыва</a>
@@ -74,8 +72,8 @@
                     <path
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                   </svg>
+                  <span class="gallery__number-likes">1350</span>
                 </button>
-                <span class="gallery__number-likes">1350</span>
               </div>
             </a>
           </li>
@@ -95,15 +93,17 @@
                     <path
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                   </svg>
+                  <span class="gallery__number-likes">146</span>
                 </button>
-                <span class="gallery__number-likes">146</span>
               </div>
             </a>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <img class="gallery__image" src="./img/catalog/photo-3.jpg" alt="Горный серпантин">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x">
+                <source media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.jpg 1x">
+                <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" alt="Горный серпантин">
               </picture>
               <div class="gallery__photo-information">
                 <h3 class="gallery__title">Дорога на север</h3>
@@ -115,14 +115,18 @@
                     <path
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                   </svg>
+                  <span class="gallery__number-likes">96</span>
                 </button>
-                <span class="gallery__number-likes">96</span>
               </div>
             </a>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="./img/catalog/photo-4.jpg" width="280" height="280" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x">
+                <source media="(min-width: 768px)" srcset="./img/catalog/photo-4-tablet.jpg 1x">
+                <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" alt="Мост дьявола">
+              </picture>
               <div class="gallery__photo-information">
                 <h3 class="gallery__title">Мост дьявола</h3>
                 <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
@@ -133,8 +137,8 @@
                     <path
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                   </svg>
+                  <span class="gallery__number-likes">254</span>
                 </button>
-                <span class="gallery__number-likes">254</span>
               </div>
             </a>
           </li>
@@ -147,15 +151,20 @@
         <h2 class="video__title heading">Все еще сомневаетесь?</h2>
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
-        <img class="video__content-image" src="./img/catalog/video-desktop.jpg" width="280" height="177"
-             alt="Видеопрезентация о Седоне">
-        <button class="video__button" type="button">
-          <span class="visually-hidden">Включить видео</span>
-          <svg class="video__button-icon" width="48" height="55" viewBox="0 0 48 55" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z"/>
-          </svg>
-        </button>
+        <div class="video__image-container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/catalog/video-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="./img/catalog/video-tablet.jpg 1x">
+            <img class="video__content-image" src="./img/catalog/video-mobile.jpg" alt="Видеопрезентация о Седоне">
+          </picture>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Включить видео</span>
+            <svg class="video__button-icon" width="48" height="55" viewBox="0 0 48 55" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
