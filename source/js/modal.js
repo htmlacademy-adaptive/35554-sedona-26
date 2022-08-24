@@ -8,5 +8,3 @@ modalButton.addEventListener('click', function () {
     modal.classList.add('modal-close');
   }
 })
-
-

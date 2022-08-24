@@ -1,8 +1,6 @@
 .intro__wrapper {
   position: relative;
-  background:
-    //url("../img/intro-triangl.svg") no-repeat center,
-    $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
+  background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
   background-size: cover;
 
   &::after {
