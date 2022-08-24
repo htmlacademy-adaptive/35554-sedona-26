@@ -1,10 +1,13 @@
-let modal = document.querySelectorAll('.modal');
+let modal = document.querySelector('.modal');
+let modalCorrect = document.querySelector('.modal--correct')
 let modalButton = document.querySelector('.modal__button');
+let modalButtonCorrect = document.querySelector('.modal__button--correct');
 
 modalButton.addEventListener('click', function () {
-  if (modal.classList.contains('modal-close')) {
-    modal.classList.remove('modal-close');
-  } else {
-    modal.classList.add('modal-close');
-  }
+  modal.classList.add('modal-close');
 })
+
+modalButtonCorrect.addEventListener('click', function () {
+  modalCorrect.classList.add('modal-close');
+})
+
