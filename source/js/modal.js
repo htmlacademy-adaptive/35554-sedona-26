@@ -5,9 +5,8 @@ let modalButtonCorrect = document.querySelector('.modal__button--correct');
 
 modalButton.addEventListener('click', function () {
   modal.classList.add('modal-close');
-})
+});
 
 modalButtonCorrect.addEventListener('click', function () {
   modalCorrect.classList.add('modal-close');
-})
-
+});
