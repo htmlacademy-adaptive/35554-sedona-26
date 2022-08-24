@@ -153,6 +153,7 @@
   font-weight: 700;
   text-transform: none;
   color: $black-color;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -181,6 +182,10 @@
     background-color: $secondary-color;
     border-radius: 50%;
     z-index: 2;
+  }
+
+  &:hover::before {
+    background-color: $decor-color;
   }
 }
 
@@ -214,15 +219,43 @@
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  &:hover {
+    background-color: $decor-color;
+  }
+
+  &:active {
+    outline: 4px solid $decor-color;
+    background-color: $white-color;
+  }
 }
 
-.field-group__input-checkbox:checked + .field-group__label-list::before {
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 22px 16px;
+.field-group__input-checkbox {
+  &:checked + .field-group__label-list::before {
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 16px;
+  }
+
+  &:active + .field-group__label-list::before {
+    background-color: $active-input-color;
+    background-image: url("../img/tick-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.field-group__input-radio:checked + .field-group__label-list::after {
-  opacity: 1;
+.field-group__input-radio {
+  &:checked + .field-group__label-list::after {
+    opacity: 1;
+  }
+
+  &:active + .field-group__label-list--radio::before {
+    background-color: $active-input-color;
+  }
+
+  &:active + .field-group__label-list--radio::after {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
 }

@@ -23,4 +23,8 @@
 
 .social__link-icon {
   fill: $white-color;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -16,4 +16,12 @@
 .copyright__link-icon {
   display: block;
   fill: $black-color;
+
+  &:hover {
+    fill: $primary-back-color;
+  }
+
+  &:active {
+    fill: $active-icon-color;
+  }
 }
