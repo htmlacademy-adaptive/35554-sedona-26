@@ -73,18 +73,18 @@
 
           <fieldset class="reviews__field-group field-group">
             <legend class="field-group__title heading">Контактная информация:</legend>
-            <div class="field-group__wrap field-group__wrap--decor">
+            <div class="field-group__wrap field-group__wrap--contacts">
               <label for="phone" class="field-group__form-label">Контактный телефон<sup>*</sup>:</label>
               <input class="field-group__form-input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
             </div>
-            <div class="field-group__wrap field-group__wrap--decor field-group__wrap--email">
+            <div class="field-group__wrap field-group__wrap--contacts field-group__wrap--email">
               <label for="email" class="field-group__form-label">Электронная почта<sup>*</sup>:</label>
               <input class="field-group__form-input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
 
           <fieldset class="reviews__field-group reviews__field-group--row field-group">
-            <legend class="field-group__title heading">Ваше общее впечатление:</legend>
+            <legend class="field-group__title field-group__title--decor heading">Ваше общее впечатление:</legend>
             <ul class="field-group__list">
               <li class="field-group__item">
                 <input class="field-group__input-radio visually-hidden" type="radio" name="impression" checked id="positive">
@@ -101,8 +101,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="reviews__field-group reviews__field-group--row field-group">
-            <legend class="field-group__title heading">Посещенные достопримечательности:</legend>
+          <fieldset class="reviews__field-group reviews__field-group--row reviews__field-group--sightseeing field-group">
+            <legend class="field-group__title field-group__title--decor heading">Посещенные достопримечательности:</legend>
             <ul class="field-group__list field-group__list--checkbox">
               <li class="field-group__item field-group__item--checkbox">
                 <input class="field-group__input-checkbox visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
@@ -129,11 +129,13 @@
           </textarea>
           </div>
 
-          <button class="reviews__button button" type="submit">Отправить отзыв</button>
+          <div class="reviews__wrap">
+            <button class="reviews__button button" type="submit">Отправить отзыв</button>
 
-          <p class="reviews__legend">
-            <small>* — обязательные поля</small>
-          </p>
+            <p class="reviews__legend">
+              <small>* — обязательные поля</small>
+            </p>
+          </div>
 
         </form>
       </div>

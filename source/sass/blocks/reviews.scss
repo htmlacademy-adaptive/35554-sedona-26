@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
+    font-size: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +54,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 67px 120px 61px;
+    grid-template-columns: 494px 466px;
+    padding: 0 120px 61px;
   }
 }
 
@@ -101,6 +103,7 @@
 
   &--row {
     position: relative;
+    z-index: 1;
 
     &::before {
       @media (min-width: $tablet-width) {
@@ -119,6 +122,12 @@
     }
   }
 
+  &--sightseeing {
+    &::before {
+      top: -54px;
+    }
+  }
+
   &--line {
     &::after {
       content: none;
@@ -127,6 +136,19 @@
     &::before {
       top: 12px;
     }
+  }
+}
+
+.reviews__wrap {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    grid-column: 1/3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -147,5 +169,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     padding: 23px 0 14px;
+    font-size: 14px;
+    color: $secondary-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 17px;
   }
 }
