@@ -91,6 +91,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      margin-top: -1px;
       background-color: $white-color;
       clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
 
@@ -133,45 +134,69 @@
     }
   }
 
-  &--house::before {
-    width: 39px;
-    height: 37px;
-    background: url("../img/icon-house.svg") no-repeat;
+  &--house {
+    &::before {
+      width: 39px;
+      height: 37px;
+      background: url("../img/icon-house.svg") no-repeat;
 
-    @media (min-width: $tablet-width) {
-      width: 75px;
-      height: 72px;
-      background-size: 75px 72px;
+      @media (min-width: $tablet-width) {
+        width: 75px;
+        height: 72px;
+        background-size: 75px 72px;
+      }
     }
   }
 
-  &--food::before {
-    width: 40px;
-    height: 35px;
-    background: url("../img/icon-burger.svg") no-repeat;
+  &--food {
+    &::before {
+      width: 40px;
+      height: 35px;
+      background: url("../img/icon-burger.svg") no-repeat;
 
-    @media (min-width: $tablet-width) {
-      width: 76px;
-      height: 68px;
-      background-size: 76px 68px;
+      @media (min-width: $tablet-width) {
+        width: 76px;
+        height: 68px;
+        background-size: 76px 68px;
+      }
     }
   }
 
-  &--souvenirs::before {
-    width: 32px;
-    height: 38px;
-    background: url("../img/icon-gift.svg") no-repeat;
+  &--souvenirs {
+    &::before {
+      width: 32px;
+      height: 38px;
+      background: url("../img/icon-gift.svg") no-repeat;
 
-    @media (min-width: $tablet-width) {
-      width: 64px;
-      height: 75px;
-      background-size: 64px 75px;
+      @media (min-width: $tablet-width) {
+        width: 64px;
+        height: 75px;
+        background-size: 64px 75px;
+      }
     }
   }
 
   &--reverse {
     @media (min-width: $tablet-width) {
       flex-direction: row-reverse;
+    }
+  }
+
+  &--line {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: $item-line-color;
+
+      @media (min-width: $tablet-width) {
+        content: none;
+      }
     }
   }
 }
@@ -223,7 +248,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 125px;
+      padding: 0 124px;
     }
   }
 
@@ -264,7 +289,17 @@
 }
 
 .advantages__image {
+  width: 100%;
   flex: 0 1 66.67%;
   display: block;
-  margin: 0 auto;
+  max-height: 260px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    max-height: 256px;
+  }
+}
+
+picture {
+  flex-basis: 66.67%;
 }

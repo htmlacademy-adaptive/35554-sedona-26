@@ -42,10 +42,15 @@
     top: -25px;
     height: 1px;
     width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: -40px;
     background-color: $decor-color;
 
     @media (min-width: $tablet-width) {
       content: none;
+      padding: 0;
+      margin: 0;
     }
   }
 }

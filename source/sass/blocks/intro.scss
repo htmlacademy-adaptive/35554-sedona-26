@@ -10,6 +10,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: -1px;
     background-color: $white-color;
     clip-path: polygon(100% 100%, 100% 56%, 79% 79%, 79% 56%, 50% 100%, 21% 56%, 21% 79%, 0 56%, 0 100%);
   }
