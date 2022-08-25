@@ -1,5 +1,4 @@
 .video__wrapper {
-  position: relative;
   padding-top: 17px;
   text-align: center;
 
@@ -18,22 +17,32 @@
 
 .video__description {
   margin: 0;
-  padding: 26px 15px 38px;
+  padding: 26px calc((100% - 445px) / 2) 38px;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+}
+
+.video__image-container {
+  position: relative;
 }
 
 .video__content-image {
   display: block;
+  width: 100%;
 }
 
 .video__button {
   position: absolute;
-  left: 120px;
-  bottom: 60px;
+  left: calc(50% - 24px);
+  bottom: calc(50% - 27px);
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .video__button-icon {

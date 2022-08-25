@@ -9,4 +9,19 @@
   box-sizing: border-box;
   color: $white-color;
   background-color: $primary-back-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $active-color;
+  }
+
+  &:disabled {
+    color: $white-color;
+    background-color: $decor-color;
+  }
 }

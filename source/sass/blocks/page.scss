@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -10,6 +10,15 @@
   min-height: 100%;
   min-width: 320px;
   margin: 0;
-  background-color: $white-color;
+  background-color: $input-back-color;
   color: $black-color;
+}
+
+.main-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: $white-color;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
 }

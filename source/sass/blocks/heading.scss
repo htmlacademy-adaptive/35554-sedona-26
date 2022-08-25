@@ -4,4 +4,8 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }

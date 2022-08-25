@@ -1,7 +1,19 @@
 .intro__wrapper {
-  //background: $intro-back-color url("../img/back-mobile.jpg") no-repeat top;
-  background: $intro-back-color url("../img/background.jpg") no-repeat top;
-  background-size: 902px 214px;
+  position: relative;
+  background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1px;
+    background-color: $white-color;
+    clip-path: polygon(100% 100%, 100% 56%, 79% 79%, 79% 56%, 50% 100%, 21% 56%, 21% 79%, 0 56%, 0 100%);
+  }
 }
 
 .intro__logo {
@@ -15,9 +27,10 @@
 
   &--short {
     padding: 52px 0 67px;
-    //background: $intro-back-color url("../img/catalog/back-desktop.jpg") no-repeat top;
 
     @media (min-width: $tablet-width) {
+      width: 457px;
+      height: 78px;
       padding: 95px 0 117px;
     }
 

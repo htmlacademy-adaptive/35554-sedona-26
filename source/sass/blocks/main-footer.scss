@@ -1,17 +1,20 @@
+.main-footer {
+  background-color: $white-color;
+}
+
 .main-footer__wrapper {
-  padding-top: 38px;
-  padding-bottom: 29px;
+  padding: 38px 60px 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 60px;
+    align-items: center;
+    padding: 36px 60px 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 105px;
+    padding-left: 120px;
     padding-right: 120px;
   }
 }
@@ -24,12 +27,24 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $black-color;
+
+  &:hover {
+    color: $primary-back-color;
+  }
+
+  &:active {
+    color: $active-icon-color;
+  }
 }
 
 .main-footer__social {
-  width: 156px;
+  min-width: 156px;
   padding-top: 33px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-footer__copyright {
