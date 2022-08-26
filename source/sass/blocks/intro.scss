@@ -3,6 +3,10 @@
   background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-desktop@2x.jpg");
+  }
+
   &::after {
     content: "";
     width: 100%;
