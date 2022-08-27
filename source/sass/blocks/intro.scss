@@ -3,6 +3,10 @@
   background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-desktop@2x.jpg");
+  }
+
   &::after {
     content: "";
     width: 100%;
@@ -12,7 +16,15 @@
     left: 0;
     margin-bottom: -1px;
     background-color: $white-color;
-    clip-path: polygon(100% 100%, 100% 56%, 79% 79%, 79% 56%, 50% 100%, 21% 56%, 21% 79%, 0 56%, 0 100%);
+    clip-path: polygon(100% 100%, 100% 56%, 50% 100%, 0 56%, 0 100%);
+
+    @media (min-width: $tablet-width) {
+      clip-path: polygon(100% 100%, 100% 36%, 96% 40%, 96% 0%, 50% 100%, 4% 0%, 4% 40%, 0% 36%, 0 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      clip-path: polygon(100% 100%, 100% 0%, 79% 37%, 79% 2%, 50% 100%, 21% 1%, 21% 38%, 0% 0%, 0 100%);
+    }
   }
 }
 
@@ -23,6 +35,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 78px 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
   }
 
   &--short {

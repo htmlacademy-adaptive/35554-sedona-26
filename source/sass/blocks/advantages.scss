@@ -4,7 +4,7 @@
 
 .advantages__slogan {
   margin: 0 auto;
-  padding: 32px 30px 35px;
+  padding: 35px 30px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 59px;
+    padding-top: 65px;
   }
 }
 
@@ -31,11 +31,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 44px;
+    padding-bottom: 46px;
   }
 }
 
@@ -55,16 +55,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 24px 32px;
+  padding: 25px 32px;
   text-align: center;
   background-color: $advantages-color;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 40px;
+    padding: 43px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 62px;
+    padding-bottom: 64px;
   }
 
   &--accent {
@@ -82,7 +82,7 @@
 
   &--decor {
     position: relative;
-    padding-top: 37px;
+    padding-top: 20px;
 
     &::before {
       content: "";
@@ -93,7 +93,7 @@
       left: 0;
       margin-top: -1px;
       background-color: $white-color;
-      clip-path: polygon(0 0, 100% 0, 100% 45%, 50% 100%, 0 45%);
+      clip-path: polygon(0 0, 100% 0, 100% 18%, 50% 60%, 0 18%);
 
       @media (min-width: $tablet-width) {
         content: none;
@@ -107,7 +107,7 @@
 
   &--quality {
     position: relative;
-    padding: 22px 0 0 46px;
+    padding: 22px 0 0 45px;
     text-align: start;
     color: $secondary-color;
     background-color: $white-color;
@@ -115,7 +115,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 22px;
+      top: 25px;
       left: 0;
 
       @media (min-width: $tablet-width) {
@@ -125,12 +125,12 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 158px 32px 59px;
+      padding: 158px 32px 60px;
       text-align: center;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 158px 65px 80px;
+      padding: 158px 65px 81px;
     }
   }
 
@@ -149,6 +149,8 @@
   }
 
   &--food {
+    padding-left: 50px;
+
     &::before {
       width: 40px;
       height: 35px;
@@ -163,6 +165,14 @@
   }
 
   &--souvenirs {
+    @media (min-width: $tablet-width) {
+      padding-top: 140px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 158px;
+    }
+
     &::before {
       width: 32px;
       height: 38px;
@@ -189,9 +199,9 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 20px;
       height: 1px;
-      width: 100%;
+      width: calc(100% - 40px);
       background-color: $item-line-color;
 
       @media (min-width: $tablet-width) {
@@ -204,7 +214,7 @@
 .advantages__item-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 19px 35px;
+  padding: 35px 19px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -212,13 +222,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 52px;
+    padding-top: 49px;
     padding-bottom: 52px;
   }
 }
 
 .advantages__list-qualities {
-  padding: 0 19px 52px 19px;
+  padding: 0 19px 50px 19px;
   list-style: none;
   background-color: $white-color;
 
@@ -268,7 +278,7 @@
 
 .advantages__description {
   margin: 0;
-  padding-top: 16px;
+  padding-top: 17px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
