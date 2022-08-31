@@ -19,11 +19,8 @@
 }
 
 .social__link-icon {
+  padding: 2px 0;
   fill: $white-color;
-
-  @media (min-width: $tablet-width) {
-    padding: 2px 0;
-  }
 
   &:active {
     padding: 2px 0;

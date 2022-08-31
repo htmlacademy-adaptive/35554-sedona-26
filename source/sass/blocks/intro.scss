@@ -1,10 +1,22 @@
 .intro__wrapper {
   position: relative;
-  background: $intro-back-color url("../img/background.jpg") no-repeat 50% 0;
-  background-size: cover;
+  background: $intro-back-color url("../img/background.jpg") no-repeat bottom;
+  background-size: 901px 389px;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/background-desktop@2x.jpg");
+  }
+
+  &--short {
+    background-position-x: center;
+
+    @media (min-width: $tablet-width) {
+      background-size: inherit;
+    }
   }
 
   &::after {
