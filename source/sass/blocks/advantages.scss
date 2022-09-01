@@ -169,7 +169,8 @@
     padding-left: 43px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 140px;
+      padding-top: 136px;
+      padding-left: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -186,6 +187,8 @@
       @media (min-width: $tablet-width) {
         width: 64px;
         height: 75px;
+        top: 58px;
+        left: calc(50% - 34px);
         background-size: 64px 75px;
       }
     }
