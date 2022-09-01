@@ -6,11 +6,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
+    padding-bottom: 20px;
     font-size: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 115px;
+    padding-top: 117px;
+    padding-bottom: 32px;
   }
 }
 
@@ -23,10 +25,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 102px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 67px;
+    line-height: 21px;
   }
 }
 
@@ -69,6 +73,14 @@
   padding: 0 0 24px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 56px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -103,12 +115,20 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+  &--introduce {
+    padding-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 71px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 56px;
+  &--contacts {
+    padding-bottom: 34px;
   }
 
   &--row {
@@ -133,12 +153,30 @@
   }
 
   &--sightseeing {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 56px;
+    }
+
     &::before {
       top: -54px;
     }
   }
 
   &--line {
+    padding-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 49px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 52px;
+    }
+
     &::after {
       content: none;
     }
@@ -164,8 +202,14 @@
 
 .reviews__button {
   display: block;
-  max-width: 280px;
-  padding: 16px 48px;
+  width: 100%;
+  max-width: 324px;
+  padding: 18px 49px 13px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 384px;
+    padding: 15px 100px 16px;
+  }
 }
 
 .reviews__legend {

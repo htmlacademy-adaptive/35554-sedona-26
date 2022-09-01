@@ -1,23 +1,33 @@
 .content__title {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 37px;
   padding-bottom: 25px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-bottom: 32px;
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .content__description {
   margin: 0 auto;
   max-width: 458px;
-  padding: 0 20px 50px;
+  padding: 0 0 62px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 95px 63px;
+    padding: 0 101px 81px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 265px 65px;
+    padding: 0 377px 89px;
   }
 }
 

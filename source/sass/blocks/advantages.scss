@@ -26,7 +26,7 @@
 
 .advantages__reasons {
   margin: 0;
-  padding: 0 30px 32px;
+  padding: 0 30px 16px;
   text-transform: uppercase;
   text-align: center;
 
@@ -82,7 +82,7 @@
 
   &--decor {
     position: relative;
-    padding-top: 20px;
+    padding-top: 25px;
 
     &::before {
       content: "";
@@ -92,8 +92,8 @@
       top: 0;
       left: 0;
       margin-top: -1px;
-      background-color: $white-color;
-      clip-path: polygon(0 0, 100% 0, 100% 18%, 50% 60%, 0 18%);
+      background: url("../img/advantages-decor.svg") no-repeat top;
+      background-size: auto;
 
       @media (min-width: $tablet-width) {
         content: none;
@@ -165,8 +165,12 @@
   }
 
   &--souvenirs {
+    padding-top: 21px;
+    padding-left: 43px;
+
     @media (min-width: $tablet-width) {
-      padding-top: 140px;
+      padding-top: 136px;
+      padding-left: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -176,11 +180,15 @@
     &::before {
       width: 32px;
       height: 38px;
+      left: 3px;
+      top: 22px;
       background: url("../img/icon-gift.svg") no-repeat;
 
       @media (min-width: $tablet-width) {
         width: 64px;
         height: 75px;
+        top: 58px;
+        left: calc(50% - 34px);
         background-size: 64px 75px;
       }
     }
@@ -214,7 +222,7 @@
 .advantages__item-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 35px 19px 40px;
+  padding: 45px 20px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -224,6 +232,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 49px;
     padding-bottom: 52px;
+  }
+
+  &--second {
+    padding-top: 40px;
+    padding-bottom: 35px;
   }
 }
 

@@ -3,16 +3,13 @@
   padding: 0;
   list-style: none;
   display: flex;
+  gap: 6px;
   justify-content: center;
 }
 
 .social__item {
   min-width: 48px;
   min-height: 24px;
-}
-
-.social__item + .social__item {
-  margin-left: 6px;
 }
 
 .social__link {
@@ -22,9 +19,11 @@
 }
 
 .social__link-icon {
+  padding: 2px 0;
   fill: $white-color;
 
   &:active {
+    padding: 2px 0;
     opacity: 0.3;
   }
 }

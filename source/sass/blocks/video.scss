@@ -4,30 +4,45 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 62px;
+    padding-top: 66px;
+    padding-bottom: 84px;
   }
 }
 
 .video__title {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__description {
   margin: 0;
-  padding: 26px calc((100% - 445px) / 2) 38px;
+  padding: 28px 20px 38px;
   text-transform: uppercase;
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+    padding: 31px calc((100% - 445px) / 2) 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
   }
 }
 
 .video__image-container {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+    padding: 0 200px;
+  }
 }
 
 .video__content-image {
@@ -37,12 +52,17 @@
 
 .video__button {
   position: absolute;
-  left: calc(50% - 24px);
-  bottom: calc(50% - 27px);
+  left: calc(50% - 16px);
+  bottom: calc(50% - 33px);
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: calc(50% - 24px);
+    bottom: calc(50% - 32px);
+  }
 }
 
 .video__button-icon {
