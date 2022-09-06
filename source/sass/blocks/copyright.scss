@@ -1,16 +1,25 @@
 .copyright {
+  text-transform: uppercase;
+}
+
+.copyright__link {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  color: $black-color;
+
+  &:hover {
+    color: $primary-back-color;
+  }
+
+  &:active {
+    color: $active-icon-color;
+  }
 }
 
 .copyright__text {
   margin: 0;
   padding: 6px 12px 6px 0;
-  text-transform: uppercase;
-}
-
-.copyright__link {
-  display: block;
 }
 
 .copyright__link-icon {
