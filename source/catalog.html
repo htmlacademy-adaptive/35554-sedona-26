@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -18,10 +18,10 @@
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
         <svg class="main-navigation__icon main-navigation__icon--closed main-navigation__icon--visible" width="23" height="22" fill="none" id="visible">
-          <use xlink:href="img/sprite.svg#icon-visible"></use>
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
         <svg class="main-navigation__icon main-navigation__icon--invisible" width="23" height="23" fill="none" id="invisible">
-          <use xlink:href="img/sprite.svg#icon-invisible"></use>
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -47,7 +47,10 @@
     <section class="intro">
       <div class="intro__wrapper intro__wrapper--short">
         <h2 class="visually-hidden">Седона</h2>
-        <img class="intro__logo intro__logo--short" src="img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/logo-catalog-desktop.svg">
+          <img class="intro__logo intro__logo--short" src="img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        </picture>
       </div>
     </section>
 
@@ -60,9 +63,9 @@
           <li class="gallery__item gallery__item--first">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
-                <img class="gallery__image gallery__image--first" src="./img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="дорога среди равнин">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg 1x, ./img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/catalog/photo-1-tablet.jpg 1x, ./img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="gallery__image gallery__image--first" src="./img/catalog/photo-1-mobile.jpg" srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="дорога среди равнин">
               </picture>
               <div class="gallery__photo-information">
                 <h3 class="gallery__title">Неродные просторы</h3>
@@ -70,7 +73,7 @@
                 <button class="gallery__button button" type="button">
                   <span class="visually-hidden">количество лайков</span>
                   <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#likes"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="gallery__number-likes">1350</span>
                 </button>
@@ -80,9 +83,9 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-tablet@2x.jpg 2x" width="280" height="280" alt="Местные растения">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, ./img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/catalog/photo-2-tablet.jpg 1x, ./img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
               </picture>
               <div class="gallery__photo-information">
                 <h3 class="gallery__title">Местная растительность</h3>
@@ -90,7 +93,7 @@
                 <button class="gallery__button button" type="button">
                   <span class="visually-hidden">количество лайков</span>
                   <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#likes"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="gallery__number-likes">143</span>
                 </button>
@@ -100,9 +103,9 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горный серпантин">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x, ./img/catalog/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.jpg 1x, ./img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горный серпантин">
               </picture>
               <div class="gallery__photo-information">
                 <h3 class="gallery__title">Дорога на север</h3>
@@ -110,7 +113,7 @@
                 <button class="gallery__button button" type="button">
                   <span class="visually-hidden">количество лайков</span>
                   <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#likes"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="gallery__number-likes">96</span>
                 </button>
@@ -120,9 +123,9 @@
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
-                <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x, ./img/catalog/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/catalog/photo-4-tablet.jpg 1x, ./img/catalog/photo-4-tablet@2x.jpg 2x">
+                <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" srcset="./img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
               </picture>
               <div class="gallery__photo-information">
                 <h3 class="gallery__title">Мост дьявола</h3>
@@ -130,7 +133,7 @@
                 <button class="gallery__button button" type="button">
                   <span class="visually-hidden">количество лайков</span>
                   <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#likes"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="gallery__number-likes">254</span>
                 </button>
@@ -148,14 +151,14 @@
           раз!</p>
         <div class="video__image-container">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="./img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
-            <img class="video__content-image" src="./img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Видеопрезентация о Седоне">
+            <source media="(min-width: 1200px)" srcset="./img/catalog/video-desktop.jpg 1x, ./img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/catalog/video-tablet.jpg 1x, ./img/catalog/video-tablet@2x.jpg 2x">
+            <img class="video__content-image" src="./img/catalog/video-mobile.jpg" srcset="./img/catalog/video-mobile@2x.jpg 2x" alt="Видеопрезентация о Седоне">
           </picture>
           <button class="video__button" type="button">
             <span class="visually-hidden">Включить видео</span>
             <svg class="video__button-icon" width="48" height="55" fill="none">
-              <use xlink:href="img/sprite.svg#icon-video"></use>
+              <use xlink:href="img/sprite.svg#play-icon"></use>
             </svg>
           </button>
         </div>
@@ -174,7 +177,7 @@
             <a class="social__link button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="social__link-icon" width="24" height="14" fill="none">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
@@ -182,7 +185,7 @@
             <a class="social__link button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__link-icon" width="22" height="18" fill="none">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -202,7 +205,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Сайт HTML Academy</span>
           <svg class="copyright__link-icon" width="27" height="35" fill="none">
-            <use xlink:href="img/sprite.svg#icon-academyHtml"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </section>

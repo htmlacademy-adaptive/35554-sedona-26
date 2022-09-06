@@ -15,13 +15,13 @@
 
 .copyright__link-icon {
   display: block;
-  fill: $black-color;
+  color: $black-color;
 
   &:hover {
-    fill: $primary-back-color;
+    color: $primary-back-color;
   }
 
   &:active {
-    fill: $active-icon-color;
+    color: $active-icon-color;
   }
 }

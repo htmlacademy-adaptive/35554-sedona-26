@@ -132,11 +132,11 @@
 }
 
 .gallery__button-icon {
-  fill: $black-color;
+  color: $black-color;
   opacity: 0.3;
 
   @media (min-width: $desktop-width) {
-    fill: $white-color;
+    color: $white-color;
     opacity: 1;
   }
 }

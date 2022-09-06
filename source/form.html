@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма отзыва</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -18,10 +18,10 @@
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">
         <svg class="main-navigation__icon main-navigation__icon--closed main-navigation__icon--visible" width="23" height="22" fill="none" id="visible">
-          <use xlink:href="img/sprite.svg#icon-visible"></use>
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
         <svg class="main-navigation__icon main-navigation__icon--invisible" width="23" height="23" fill="none" id="invisible">
-          <use xlink:href="img/sprite.svg#icon-invisible"></use>
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
         </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -47,7 +47,10 @@
     <section class="intro">
       <div class="intro__wrapper">
         <h2 class="visually-hidden">Седона</h2>
-        <img class="intro__logo intro__logo--short" src="./img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/logo-catalog-desktop.svg">
+          <img class="intro__logo intro__logo--short" src="img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        </picture>
       </div>
     </section>
 
@@ -127,8 +130,7 @@
 
           <div class="reviews__field-group reviews__field-group--row reviews__field-group--line field-group">
             <label class="field-group__form-label field-group__form-label--textarea heading" for="review-text">Опишите свои эмоции:</label>
-            <textarea class="field-group__form-input field-group__form-input--textarea" rows="10" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги">
-          </textarea>
+            <textarea class="field-group__form-input field-group__form-input--textarea" rows="10" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
           <div class="reviews__wrap">
@@ -151,7 +153,7 @@
             <a class="social__link button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="social__link-icon" width="24" height="14" fill="none">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
@@ -159,7 +161,7 @@
             <a class="social__link button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg class="social__link-icon" width="22" height="18" fill="none">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -179,7 +181,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Сайт HTML Academy</span>
           <svg class="copyright__link-icon" width="27" height="35" fill="none">
-            <use xlink:href="img/sprite.svg#icon-academyHtml"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </section>
