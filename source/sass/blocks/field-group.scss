@@ -218,6 +218,7 @@
     resize: none;
     max-height: 150px;
     margin-bottom: 32px;
+    padding: 16px;
 
     @media (min-width: $tablet-width) {
       max-height: 160px;

@@ -11,7 +11,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background-desktop@2x.jpg");
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../../img/background-desktop@2x.jpg");
   }
 
   &--short {
@@ -46,7 +46,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 101px 0 120px;
+      padding: 102px 0 121px;
     }
   }
 }

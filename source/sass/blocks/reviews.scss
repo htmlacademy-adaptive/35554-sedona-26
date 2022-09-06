@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 67px;
+    padding-bottom: 65px;
     line-height: 21px;
   }
 }
@@ -204,11 +204,11 @@
   display: block;
   width: 100%;
   max-width: 324px;
-  padding: 18px 49px 13px;
+  padding: 18px 10px 13px 0;
 
   @media (min-width: $desktop-width) {
     max-width: 384px;
-    padding: 15px 100px 16px;
+    padding: 15px 13px 16px 0;
   }
 }
 

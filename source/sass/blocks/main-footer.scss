@@ -3,7 +3,7 @@
 }
 
 .main-footer__wrapper {
-  padding: 39px 84px 29px;
+  padding: 29px 82px 29px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
+    padding-top: 37px;
   }
 }
 

@@ -83,7 +83,7 @@ export const sprite = () => {
 // Copy
 const copy = (done) => {
   gulp.src([
-    'source/font/*.{woff2,woff}',
+    'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
       ], {
@@ -109,6 +109,13 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
+  done();
+}
+
+// Reload
+
+const reload = (done) => {
+  sync.reload();
   done();
 }
 

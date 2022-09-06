@@ -47,7 +47,10 @@
     <section class="intro">
       <div class="intro__wrapper">
         <h2 class="visually-hidden">Седона</h2>
-        <img class="intro__logo intro__logo--short" src="./img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./img/logo-catalog-desktop.svg">
+          <img class="intro__logo intro__logo--short" src="img/logo-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        </picture>
       </div>
     </section>
 
@@ -127,8 +130,7 @@
 
           <div class="reviews__field-group reviews__field-group--row reviews__field-group--line field-group">
             <label class="field-group__form-label field-group__form-label--textarea heading" for="review-text">Опишите свои эмоции:</label>
-            <textarea class="field-group__form-input field-group__form-input--textarea" rows="10" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги">
-          </textarea>
+            <textarea class="field-group__form-input field-group__form-input--textarea" rows="10" name="review-text" id="review-text" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
           <div class="reviews__wrap">

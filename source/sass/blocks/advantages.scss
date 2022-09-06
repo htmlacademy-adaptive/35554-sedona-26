@@ -21,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 65px;
+    padding-bottom: 30px;
   }
 }
 
@@ -35,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 46px;
+    padding-bottom: 44px;
   }
 }
 
@@ -60,11 +61,11 @@
   background-color: $advantages-color;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 40px;
+    padding: 42px 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 64px;
+    padding-bottom: 62px;
   }
 
   &--accent {
@@ -149,10 +150,10 @@
   }
 
   &--food {
-    padding-left: 50px;
+    padding-left: 49px;
 
     @media (min-width: $tablet-width) {
-      padding-right: 50px;
+      padding-right: 49px;
     }
 
     &::before {
@@ -181,6 +182,7 @@
 
     @media (min-width: $desktop-width) {
       padding-top: 158px;
+      padding-left: 67px;
     }
 
     &::before {
@@ -223,6 +225,12 @@
       }
     }
   }
+
+  &--third {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 62px;
+    }
+  }
 }
 
 .advantages__item-wrapper {
@@ -246,6 +254,10 @@
 
     @media (min-width: $tablet-width) {
       padding: 3px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 50px 0 0;
     }
   }
 }
@@ -277,7 +289,7 @@
     color: $white-color;
 
     @media (min-width: $tablet-width) {
-      padding: 40px 53px 0;
+      padding: 40px 52px 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -319,8 +331,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 60px;
-      padding-right: 60px;
+      padding-left: 57px;
+      padding-right: 57px;
     }
   }
 }
