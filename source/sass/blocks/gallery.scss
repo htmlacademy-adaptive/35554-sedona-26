@@ -1,9 +1,12 @@
 .gallery__item {
   position: relative;
   padding-top: 24px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   &::after {
@@ -40,15 +43,8 @@
 .gallery__link {
   display: block;
   position: relative;
-  padding-bottom: 26px;
   text-decoration: none;
   color: $black-color;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .gallery__image {
@@ -124,20 +120,44 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
+    max-height: none;
     margin-left: auto;
-    padding: 5px 0 12px;
+    padding: 5px 0;
     grid-column: 2/3;
     grid-row: 1/3;
+  }
+
+  &:hover {
+    color: $hover-color;
+    background-color: transparent;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+
+  &:disabled {
+    color: $decor-color;
+    background-color: transparent;
   }
 }
 
 .gallery__button-icon {
-  color: $black-color;
+  color: currentColor;
   opacity: 0.3;
 
   @media (min-width: $desktop-width) {
     color: $white-color;
     opacity: 1;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -147,11 +167,19 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 1/3;
-    padding-left: 9px;
+    padding-left: 7px;
   }
 
   @media (min-width: $desktop-width) {
     color: $white-color;
     padding-left: 6px;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

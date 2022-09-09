@@ -3,6 +3,14 @@
   width: auto;
   min-height: 56px;
   background-color: $white-color;
+
+  &--nojs .main-navigation__toggle {
+    display: none;
+  }
+
+  &--nojs .main-navigation__list {
+    display: block;
+  }
 }
 
 .main-navigation__toggle {
@@ -43,12 +51,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .main-navigation--closed .main-navigation__item {
-    display: none;
   }
 }
 
