@@ -8,6 +8,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
 <div class="main-wrapper">
@@ -27,10 +29,10 @@
       </button>
       <ul class="main-navigation__list main-navigation__list--visible">
         <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+          <a class="main-navigation__link main-navigation__link--current" href="catalog.html">Фото и видео</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="form.html">Форма Отзыва</a>
@@ -63,82 +65,94 @@
           <li class="gallery__item gallery__item--first">
             <a class="gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.webp 1x, ./img/catalog/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-1-tablet.webp 1x, ./img/catalog/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/catalog/photo-1-mobile.webp 1x, ./img/catalog/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg 1x, ./img/catalog/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/catalog/photo-1-tablet.jpg 1x, ./img/catalog/photo-1-tablet@2x.jpg 2x">
                 <img class="gallery__image gallery__image--first" src="./img/catalog/photo-1-mobile.jpg" srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="дорога среди равнин">
               </picture>
-              <div class="gallery__photo-information">
-                <h3 class="gallery__title">Неродные просторы</h3>
-                <p class="gallery__author">Автор фото: <cite>Борис</cite></p>
-                <button class="gallery__button button" type="button">
-                  <span class="visually-hidden">количество лайков</span>
-                  <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#like-icon"></use>
-                  </svg>
-                  <span class="gallery__number-likes">1350</span>
-                </button>
-              </div>
             </a>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Неродные просторы</h3>
+              <p class="gallery__author">Автор фото: <cite>Борис</cite></p>
+              <button class="gallery__button button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" fill="none">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="gallery__number-likes">1350</span>
+              </button>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.webp 1x, ./img/catalog/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-2-tablet.webp 1x, ./img/catalog/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/catalog/photo-2-mobile.webp 1x, ./img/catalog/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, ./img/catalog/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/catalog/photo-2-tablet.jpg 1x, ./img/catalog/photo-2-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="./img/catalog/photo-2-mobile.jpg" srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
               </picture>
-              <div class="gallery__photo-information">
-                <h3 class="gallery__title">Местная растительность</h3>
-                <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
-                <button class="gallery__button button" type="button">
-                  <span class="visually-hidden">количество лайков</span>
-                  <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#like-icon"></use>
-                  </svg>
-                  <span class="gallery__number-likes">143</span>
-                </button>
-              </div>
             </a>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Местная растительность</h3>
+              <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
+              <button class="gallery__button button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" fill="none">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="gallery__number-likes">143</span>
+              </button>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.webp 1x, ./img/catalog/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.webp 1x, ./img/catalog/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/catalog/photo-3-mobile.webp 1x, ./img/catalog/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x, ./img/catalog/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.jpg 1x, ./img/catalog/photo-3-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="./img/catalog/photo-3-mobile.jpg" srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горный серпантин">
               </picture>
-              <div class="gallery__photo-information">
-                <h3 class="gallery__title">Дорога на север</h3>
-                <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
-                <button class="gallery__button button" type="button">
-                  <span class="visually-hidden">количество лайков</span>
-                  <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#like-icon"></use>
-                  </svg>
-                  <span class="gallery__number-likes">96</span>
-                </button>
-              </div>
             </a>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Дорога на север</h3>
+              <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
+              <button class="gallery__button button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" fill="none">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="gallery__number-likes">96</span>
+              </button>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.webp 1x, ./img/catalog/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-4-tablet.webp 1x, ./img/catalog/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/catalog/photo-4-mobile.webp 1x, ./img/catalog/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x, ./img/catalog/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/catalog/photo-4-tablet.jpg 1x, ./img/catalog/photo-4-tablet@2x.jpg 2x">
                 <img class="gallery__image" src="./img/catalog/photo-4-mobile.jpg" srcset="./img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
               </picture>
-              <div class="gallery__photo-information">
-                <h3 class="gallery__title">Мост дьявола</h3>
-                <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
-                <button class="gallery__button button" type="button">
-                  <span class="visually-hidden">количество лайков</span>
-                  <svg class="gallery__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#like-icon"></use>
-                  </svg>
-                  <span class="gallery__number-likes">254</span>
-                </button>
-              </div>
             </a>
+            <div class="gallery__photo-information">
+              <h3 class="gallery__title">Мост дьявола</h3>
+              <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
+              <button class="gallery__button button" type="button">
+                <span class="visually-hidden">количество лайков</span>
+                <svg class="gallery__button-icon" width="23" height="21" fill="none">
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="gallery__number-likes">254</span>
+              </button>
+            </div>
           </li>
         </ul>
       </div>
@@ -151,6 +165,9 @@
           раз!</p>
         <div class="video__image-container">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/video-desktop.webp 1x, ./img/catalog/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/video-tablet.webp 1x, ./img/catalog/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/catalog/video-mobile.webp 1x, ./img/catalog/video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="./img/catalog/video-desktop.jpg 1x, ./img/catalog/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="./img/catalog/video-tablet.jpg 1x, ./img/catalog/video-tablet@2x.jpg 2x">
             <img class="video__content-image" src="./img/catalog/video-mobile.jpg" srcset="./img/catalog/video-mobile@2x.jpg 2x" alt="Видеопрезентация о Седоне">
@@ -201,8 +218,8 @@
       </section>
       <section class="main-footer__copyright copyright">
         <h2 class="visually-hidden">HTML Academy</h2>
-        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">Разработано</p>
           <span class="visually-hidden">Сайт HTML Academy</span>
           <svg class="copyright__link-icon" width="27" height="35" fill="none">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>

@@ -8,6 +8,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
 <div class="main-wrapper">
@@ -15,7 +17,7 @@
     <a class="main-header__logo" href="#">
       <img class="main-header__logo-image" src="img/logo.svg" alt="Город Седона" width="185" height="96">
     </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <svg class="main-navigation__icon main-navigation__icon--closed main-navigation__icon--visible" width="23" height="22" fill="none" id="visible">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
@@ -97,6 +99,9 @@
               <p class="advantages__description advantages__description--accent">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop.webp 1x, ./img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.webp 1x, ./img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/photo-bridge-mobile.webp 1x, ./img/photo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
               <img class="advantages__image" src="./img/photo-bridge-mobile.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
@@ -176,8 +181,8 @@
       </section>
       <section class="main-footer__copyright copyright">
         <h2 class="visually-hidden">HTML Academy</h2>
-        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">Разработано</p>
           <span class="visually-hidden">Сайт HTML Academy</span>
           <svg class="copyright__link-icon" width="27" height="35" fill="none">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
