@@ -9,11 +9,13 @@
   text-decoration: none;
   color: $black-color;
 
-  &:hover {
+  &:hover,
+  &:hover .copyright__link-icon {
     color: $primary-back-color;
   }
 
-  &:active {
+  &:active,
+  &:active .copyright__link-icon {
     color: $active-icon-color;
   }
 }
@@ -26,12 +28,4 @@
 .copyright__link-icon {
   display: block;
   color: $black-color;
-
-  &:hover {
-    color: $primary-back-color;
-  }
-
-  &:active {
-    color: $active-icon-color;
-  }
 }
