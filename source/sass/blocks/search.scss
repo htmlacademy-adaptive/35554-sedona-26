@@ -7,7 +7,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0 58px;
+    padding: 58px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,11 +38,19 @@
 
   @media (min-width: $tablet-width) {
     width: 435px;
-    padding-bottom: 40px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 46px;
+    padding-bottom: 49px;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
   }
 }
 
